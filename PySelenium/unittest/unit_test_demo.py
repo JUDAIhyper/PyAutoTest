@@ -13,7 +13,7 @@ import unittest
 
 class UserTestCase(unittest.TestCase):
     def tearDown(self):
-        print("--tearDown==")
+        print("==tearDown==")
         
     def setUp(self):
         print("==selfUp==")
@@ -23,9 +23,12 @@ class UserTestCase(unittest.TestCase):
         print("调用test_name")
         print(self.name)
         #断言是否相同
+        self.assertEqual(self.name,"python自动化",msg="名字不对")
     
     def test_isupper(self):
         print("调用test_isupper")
+        #断言是否为true，msg是断言错误的提示信息
+        self.assertTrue("xdclass".isupper(),msg="不是大写")
     
     def test_age(self):
         print("调用test_age")
