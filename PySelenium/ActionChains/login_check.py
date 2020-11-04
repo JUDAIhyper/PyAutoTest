@@ -18,7 +18,7 @@ sleep(2)
 driver.find_element_by_css_selector(
     "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").clear()
 driver.find_element_by_css_selector(
-    "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").send_keys("useranme")
+    "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").send_keys("phone")
 driver.find_element_by_css_selector(
     "#app > div > div.header > div.main > div.login > div > div.psw > input[type=password]").clear()
 driver.find_element_by_css_selector(
