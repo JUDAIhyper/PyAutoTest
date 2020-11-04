@@ -3,7 +3,7 @@ from time import sleep
 #获取driver
 driver = webdriver.Chrome()
 #跳转
-driver.get("E:\\STUDY\\ownpython\\PyAutoTest\\PySelenium\\弹窗页面\\alert.html")
+driver.get("PySelenium\\弹窗页面\\alert.html")
 sleep(2)
 driver.find_element_by_id("alert").click()
 #弹窗常用方法(需要先切换窗口 switch_to_alert())
