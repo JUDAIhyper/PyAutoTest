@@ -12,14 +12,23 @@
 import unittest
 
 class UserTestCase(unittest.TestCase):
-    def setUp(self):
-        print("==selfUp==")
-        
     def tearDown(self):
         print("--tearDown==")
         
+    def setUp(self):
+        print("==selfUp==")
+        self.name="python自动化"
+        
     def test_name(self):
-        print("==test_name==")
+        print("调用test_name")
+        print(self.name)
+        #断言是否相同
+    
+    def test_isupper(self):
+        print("调用test_isupper")
+    
+    def test_age(self):
+        print("调用test_age")
         
 if __name__=="__main__":
     unittest.main()
