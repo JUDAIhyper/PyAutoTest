@@ -9,6 +9,10 @@
     3）由TestLoader加载TestCase到TestSuite
     4）verbosity参数可以控制执行结果的输出，0 是简单报告，1 是一般报告， 2 是详细报告
         默认1 会在每个成功的用例前面有个"." 每个失败的用例前面有个 "F"
+
+2.TextTestRunner() 文本侧是用例运行器
+
+3.run()方法是运行测试套件的测试用例，入参为suite测试套件
 """
 import unittest
 class MyTestCase(unittest.TestCase):
