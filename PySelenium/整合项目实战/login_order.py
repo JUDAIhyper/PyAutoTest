@@ -28,11 +28,11 @@ class LoginOrderTestCase(unittest.TestCase):
         driver.find_element_by_css_selector(
             "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").clear()
         driver.find_element_by_css_selector(
-            "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").send_keys("phone")
+            "#app > div > div.header > div.main > div.login > div > div.mobienum > input[type=text]").send_keys("15811420676")
         driver.find_element_by_css_selector(
             "#app > div > div.header > div.main > div.login > div > div.psw > input[type=password]").clear()
         driver.find_element_by_css_selector(
-            "#app > div > div.header > div.main > div.login > div > div.psw > input[type=password]").send_keys("password")
+            "#app > div > div.header > div.main > div.login > div > div.psw > input[type=password]").send_keys("judai2333")
         #查找登录按钮
         login_btn = driver.find_element_by_css_selector(
             "#app > div > div.header > div.main > div.login > div > div.login_btn > button")
@@ -51,7 +51,7 @@ class LoginOrderTestCase(unittest.TestCase):
         video_ele = driver.find_element_by_css_selector(
             "#app > div > div.hot > div > div.content > a:nth-child(1) > div > h1")
         video_ele.click()
-        sleep(10)
+        sleep(2)
         #购买页面
         handles = driver.window_handles  # 获取当前浏览器的所有窗口句柄
         driver.switch_to.window(handles[-1])  # 切换到最新打开的窗口
@@ -59,7 +59,7 @@ class LoginOrderTestCase(unittest.TestCase):
             "#app > div > div.details_container.clearfix > div.body.w > div.r_container.f_r > div.gostudy > div.buy_tolearn > a")
         buy_btn.click()
         print("进入下单页面")
-        
+        sleep(5)
 
 if __name__=="__main__":
     unittest.main()
