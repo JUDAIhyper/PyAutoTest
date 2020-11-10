@@ -4,7 +4,7 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 
-class CategoryCase(unittest.TestCase):
+class CategoryTestCase(unittest.TestCase):
     def setUp(self):
         print("测试开始")
         self.driver = webdriver.Chrome()
@@ -32,6 +32,7 @@ class CategoryCase(unittest.TestCase):
         sleep(2)
         sub_menu_ele.click()
         sleep(2)
+        driver.close()
 
 if __name__=="__main__":
     unittest.main()               
