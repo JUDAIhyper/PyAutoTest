@@ -6,6 +6,7 @@ import time
 
 #创建测试集合
 def create_suite():
+    #开始测试
     print("测试开始")
     suite=unittest.TestSuite()
     suite.addTest(unittest.makeSuite(category.CategoryTestCase))
