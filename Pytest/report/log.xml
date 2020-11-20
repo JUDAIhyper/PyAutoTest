@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="DESKTOP-G0390D2" name="pytest" skipped="0" tests="20" time="0.183" timestamp="2020-11-18T15:12:15.914941"><testcase classname="test_dir.test_assert" name="test_add_1" time="0.001" /><testcase classname="test_dir.test_assert" name="test_add_2" time="0.001" /><testcase classname="test_dir.test_assert" name="test_add_3" time="0.001" /><testcase classname="test_dir.test_assert" name="test_add_4" time="0.001" /><testcase classname="test_dir.test_assert" name="test_in" time="0.001" /><testcase classname="test_dir.test_assert" name="test_not_in" time="0.003"><failure message="AssertionError: assert 'he' not in 'hello'&#10;  'he' is contained here:&#10;    hello&#10;  ? ++">def test_not_in():
+        a="hello"
+        b="he"
+&gt;       assert b not in a
+E       AssertionError: assert 'he' not in 'hello'
+E         'he' is contained here:
+E           hello
+E         ? ++
+
+test_dir\test_assert.py:34: AssertionError</failure></testcase><testcase classname="test_dir.test_assert" name="test_true_1" time="0.001" /><testcase classname="test_dir.test_assert" name="test_true_2" time="0.001" /><testcase classname="test_dir.test_assert" name="test_true_3" time="0.001" /><testcase classname="test_dir.test_assert" name="test_true_4" time="0.001" /><testcase classname="test_dir.test_assert" name="test_false_1" time="0.001" /><testcase classname="test_dir.test_fail" name="test_fail" time="0.001"><failure message="assert (2 + 1) == 4">def test_fail():
+&gt;       assert (2+1)==4
+E       assert (2 + 1) == 4
+
+test_dir\test_fail.py:2: AssertionError</failure></testcase><testcase classname="test_dir.test_fixtures_01" name="test_multiply_3_4" time="0.002" /><testcase classname="test_dir.test_fixtures_01" name="test_multiply_a_3" time="0.002" /><testcase classname="test_dir.test_fixtures_02.TestMultiply" name="test_numbers_5_6" time="0.002" /><testcase classname="test_dir.test_fixtures_02.TestMultiply" name="test_strings_b_2" time="0.002" /><testcase classname="test_dir.test_parameterize" name="test_pow[case1]" time="0.001" /><testcase classname="test_dir.test_parameterize" name="test_pow[case2]" time="0.003" /><testcase classname="test_dir.test_parameterize" name="test_pow[case3]" time="0.002" /><testcase classname="test_dir.test_parameterize" name="test_pow[case4]" time="0.001" /></testsuite></testsuites>
